@@ -2,10 +2,13 @@ var Newblog = require('../models/submission.js')
 
 var indexController = {
 	index: function(req, res) {
-		res.render('mainpage');
+		res.render('index');
 	},
+	// main: function(req, res) {
+	// 	res.render('mainpage');
+	// },
 
-	main: function(req, res){
+	submit: function(req, res){
 		res.render('submitpage');
 	},
 
@@ -25,7 +28,7 @@ var indexController = {
 
 
 	},
-	// finds info from DB
+	// finds info from DB - this also ispointed to to serve as the main page the user sees.
 	viewsubmission: function(req, res){
 		Newblog.find({}, function(err, data){
 		res.render('mainpage', {milkinblog: data})
