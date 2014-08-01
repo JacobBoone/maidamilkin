@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	.container
+	h3 Right your blog here Brittany!
+	form#blog-form(action="/blogSubmission" method="post")
+			.form-group
+				input.form-control(name="title" type="text" placeholder="Title of Blog" rows=5) 
+			.form-group
+				textarea.form-control(name="blog" type="text" placeholder="Write your blog in here!" rows=5) 
+			//- put the auto date stamp entry here or above, figure out later
+			.form-group
+				//- input.btn.btn-primary(type="submit")
+				button.btn.btn-danger(type="submit") Milk Me!
+
+
+	
+
