@@ -2,13 +2,12 @@ extends layout
 
 block content
 	//- .container
-	div.navbar.nav-default(role="navigation")
-		div.container-fluid
-			div.navbar-header
-				a.blog-nav-item Home
-				a.blog-nav-item Blog
-				a.blog-nav-item About Me
-				a.blog-nav-item Bradley Method®
+	div.navbar.nav-default.above(role="navigation")
+		div.container-fluid.row
+			div.navbar-header.col-xs-12
+				a.blog-nav-item.col-xs-4 Home
+				a.blog-nav-item.col-xs-4 About Me
+				a.blog-nav-item.col-xs-4 Bradley Method®
 		//- button.btn.btn-danger(type="submit") Home
 	div.container
 		.row
