@@ -1,4 +1,16 @@
-/*body{
-	background: url(http://makeitheaven.com/wp/wp-content/uploads/2011/01/The_Field_by_Joker841.jpg) no-repeat center center fixed; 
+body{
+	/*background: url(http://makeitheaven.com/wp/wp-content/uploads/2011/01/The_Field_by_Joker841.jpg) no-repeat center center fixed; */
+	background: url(http://www.freewhd.com/wp-content/uploads/2014/01/watercolor-painting-on-paper-10085.jpg) no-repeat center center fixed; 
+	/*background: url(http://www.unsigneddesign.com/watercolor_9_by_SadMonkeyDesign_res.jpg) no-repeat center center fixed; */
+	/*z-index: -1;*/
+}
+.above{
+	/*z-index: 1;*/
+	background-color: white;
+	border-radius: 10px;
+	width: 70%;
+}
 
-}*/
+.month{
+	padding:0;
+}
