@@ -3,13 +3,20 @@ body{
 	background: url(http://www.freewhd.com/wp-content/uploads/2014/01/watercolor-painting-on-paper-10085.jpg) no-repeat center center fixed; 
 	/*background: url(http://www.unsigneddesign.com/watercolor_9_by_SadMonkeyDesign_res.jpg) no-repeat center center fixed; */
 	/*z-index: -1;*/
+	/*background-color: beige;*/
 }
-.above{
+.above, .above-title{
 	/*z-index: 1;*/
 	background-color: white;
 	border-radius: 10px;
-	width: 70%;
+	width: 90%;
 }
+
+.above-title{
+	opacity: 0.8;
+}
+
+
 
 .month{
 	padding:0;
@@ -17,4 +24,13 @@ body{
 
 .nav-default{
 	margin: 5%;
+}
+
+.blog-area, .title-bar{
+
+}
+
+.date{
+	font-size: 10px;
+	color: grey;
 }

@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	//- .container
+	.container
 	div.navbar.nav-default.above(role="navigation")
 		div.container-fluid.row
 			div.navbar-header.col-xs-12
@@ -9,16 +9,16 @@ block content
 				a.blog-nav-item.col-xs-4 About Me
 				a.blog-nav-item.col-xs-4 Bradley Method®
 		//- button.btn.btn-danger(type="submit") Home
-	div.container
+	div.container.above-title.title-bar
 		.row
 		div.col-xs-1
-		h1.blog-header.col-xs-7 Welcome to MaidaMilkin.com!
+		h1.blog-header.col-xs-7 MaidaMilkin
 		div.col-xs-4
 		.row
 		p.col-xs-1
 		p.col-xs-7 We are happy you're here. The site is currently under construction.
 		p.col-xs-4
-	div.container.above
+	div.container.above.blog-area
 		.row
 		div.col-xs-1
 		div.blog-main.col-xs-8
@@ -26,6 +26,7 @@ block content
 			div.blog-post
 				for item in milkinblog
 					h3.title=item.title
+					p.date=item.date
 					p.blogbody=item.blog
 
 		div.col-xs-2.sidebar-module-inset
@@ -36,3 +37,5 @@ block content
 			ul.month March 2014
 			ul.month April 2014
 			//- somhow render the month links with contents of that month timestamp every60 or so
+
+

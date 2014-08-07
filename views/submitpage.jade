@@ -1,30 +1,35 @@
 extends layout
 
 block content
-	div.navbar.nav-default(role="navigation")
-		div.container-fluid
-			div.navbar-header
-				a.blog-nav-item Home
-				a.blog-nav-item Blog
-				a.blog-nav-item About Me
-				a.blog-nav-item Bradley Method®
-
+	.container
+	div.navbar.nav-default.above(role="navigation")
+		div.container-fluid.row
+			div.navbar-header.col-xs-12
+				a.blog-nav-item.col-xs-4 Home
+				a.blog-nav-item.col-xs-4 About Me
+				a.blog-nav-item.col-xs-4 Bradley Method®
 
 	div.container.above
 		h3 Right your blog here!
 		.row
-		div.col-xs-2
-		div.col-xs-8
-			form#blog-form(action="/blogSubmission" method="post")
+		div.col-xs-1
+		div.col-xs-10
+			form#blog-form.form-horizontal(action="/blogSubmission" method="post")
 					.form-group
-						input.form-control(name="title" type="text" placeholder="Title of Blog" rows=5) 
+						label Title:
+						input.form-control.title-entry(name="title" type="text" placeholder="Title of Blog Entry" rows=1) 
 					.form-group
-						textarea.form-control(name="blog" type="text" placeholder="Write your blog in here!" rows=10) 
+						label Date
+						input.form-control.date-entry(name="date" type="text" placeholder="Automate this timestamp" rows=1) 
+					.form-group
+						label Blog entry:
+						//- the placeholder does not appear on page load, but may many times appear if I enter text then delete it
+						textarea.form-control.blog-entry(name="blog" type="text" placeholder="Write your blog in here!" rows=25) 
 					//- put the auto date stamp entry here or above, figure out later
 					.form-group
 						//- input.btn.btn-primary(type="submit")
-						button.btn.btn-danger(type="submit") Milk Me!
-		div.col-xs-2
+						button.btn.btn-danger.submit-button(type="submit") Submit!
+		div.col-xs-1
 
 	//- could reference imgs on instagram
 	//- have video input??? like in the contest app?

@@ -18,6 +18,7 @@ var indexController = {
 
 		var newBlog = new Newblog({
 		title: req.body.title,
+		date: req.body.date,
 		blog: req.body.blog
 
 	});
