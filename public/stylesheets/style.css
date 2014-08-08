@@ -2,10 +2,18 @@ body{
 	/*background: url(http://makeitheaven.com/wp/wp-content/uploads/2011/01/The_Field_by_Joker841.jpg) no-repeat center center fixed; */
 	/*background: url(http://www.freewhd.com/wp-content/uploads/2014/01/watercolor-painting-on-paper-10085.jpg) no-repeat center center fixed; */
 	/*background: url(http://www.unsigneddesign.com/watercolor_9_by_SadMonkeyDesign_res.jpg) no-repeat center center fixed; */
+	background: url(http://haejude.com/wp-content/uploads/2013/06/wood-floor-turquoise.jpg) no-repeat center center fixed; 
+
 	/*z-index: -1;*/
-	background-color: beige;
+
+	/*background-color: beige;*/
 }
-.above, .above-title{
+
+/*.mainbody{
+	z-index: 1;
+}*/
+
+.above, .above-title, .jumbotron{
 	/*z-index: 1;*/
 	background-color: white;
 	border-radius: 10px;
@@ -22,12 +30,18 @@ body{
 	padding:0;
 }
 
-.nav-default{
-	margin: 5%;
+
+.navbar-default{
+	background-image: url(http://4.bp.blogspot.com/-cQwworLGIDc/UViNgWO7vjI/AAAAAAAAAOs/PX-vVDFaQFM/s1600/3.jpg);
 }
 
-.blog-area, .title-bar{
+.title-bar, .submit-area{
+	margin-top: 60px;	
+	/*padding-top: 20px;*/
+}
 
+.blog-area{
+	margin-top: 20px;
 }
 
 .date{

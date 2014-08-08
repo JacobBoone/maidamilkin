@@ -1,14 +1,38 @@
 extends layout
 
 block content
-	.container
-	div.navbar.nav-default.above(role="navigation")
-		div.container-fluid.row
-			div.navbar-header.col-xs-12
-				a.blog-nav-item.col-xs-4 Home
-				a.blog-nav-item.col-xs-4 About Me
-				a.blog-nav-item.col-xs-4 Bradley Method®
+	//- .container
+	//- div.navbar.navbar-default.navbar-fixed-top(role="navigation")
+	//- 	div.container-fluid.row
+	//- 		div.navbar-header.col-xs-12
+	//- 		div.navbar-collapse.collapse
+	//- 			ul
+	//- 				a.active.blog-nav-item.col-xs-4 Home
+	//- 				a.blog-nav-item.col-xs-4 About Me
+	//- 				a.blog-nav-item.col-xs-4 Bradley Method®
+	//- 				//- a.dropdown dropdown
 		//- button.btn.btn-danger(type="submit") Home
+		//- -------------------------------------
+	div.navbar.navbar-default.navbar-fixed-top(role='navigation')
+		.container
+				.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+	
+				.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li.active
+						a(href='#') Home
+					li
+						a(href='#about') About Me
+					li
+						a(href='#bradley') Bradley Method®
+
+
+	//- div.container.jumbotron.title-bar			
 	div.container.above-title.title-bar
 		.row
 		div.col-xs-1
@@ -18,6 +42,7 @@ block content
 		p.col-xs-1
 		p.col-xs-7 We are happy you're here. The site is currently under construction.
 		p.col-xs-4
+	//- div.container.jumbotron
 	div.container.above.blog-area
 		.row
 		div.col-xs-1
