@@ -25,7 +25,7 @@ var indexController = {
 		//  mongoose knows where to save it too on the app.js page
 	newBlog.save()
 
-		res.redirect('/mainpage')
+		// res.redirect('/mainpage')
 
 
 	},
