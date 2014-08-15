@@ -62,6 +62,7 @@ var indexController = {
 
 
 	// finds info from DB - this also ispointed to to serve as the main page the user sees.
+	// this posts the blog entries in chronological order descending by date. however, not by time, 2+ entries on the same day wont always be in real chronological order
 	viewsubmission: function(req, res){
 		Newblog.find({}, null,{sort:{date: -1}},function(err, data){
 		res.render('mainpage', {milkinblog: data})

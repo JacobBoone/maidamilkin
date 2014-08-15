@@ -35,10 +35,10 @@ block content
 			form#blog-form.form-horizontal(action="/blogSubmission" method="post")
 					.form-group
 						label Title:
-						input.form-control.title-entry.input-sm(name="title" type="text" placeholder="Title of Blog Entry" rows=1) 
+						input.form-control.title-entry.input-sm(name="title" type="text" placeholder="Title of Blog Entry" required) 
 					.form-group
 						label Date
-						input.form-control.date-entry.input-sm(name="date" type="date" placeholder="Automate this timestamp" rows=1) 
+						input.form-control.date-entry.input-sm(name="date" type="date" placeholder="Automate this timestamp" required) 
 					.form-group
 						label Blog entry:
 						//- the placeholder does not appear on page load, but may many times appear if I enter text then delete it
