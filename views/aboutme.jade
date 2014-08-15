@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+	div.navbar.navbar-default.navbar-fixed-top(role='navigation')
+		.container
+				.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+	
+				.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li.active
+						a(href='/') Home
+					li
+						a(href='/about') About Me
+					li
+						a(href='/bradley') Bradley Method®		
+	div.container.above-title.title-bar
+		.row
+		div.col-xs-1
+		h1.blog-header.col-xs-7 about me
+		div.col-xs-4
+		.row
+		p.col-xs-1
+		p.col-xs-7 We are happy you're here. The site is currently under construction. 
+		p.col-xs-4 

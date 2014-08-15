@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.viewsubmission);//points to what I want user to see.
 app.get('/submitpage', indexController.submit);
 
-
+app.get('/bradley', indexController.bradley);
+app.get('/about', indexController.aboutme);
 
 // // Submit entry is the submitted form when accessed as a POST
 app.post('/blogSubmission', indexController.submission);

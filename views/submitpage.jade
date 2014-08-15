@@ -21,24 +21,24 @@ block content
 				.navbar-collapse.collapse
 				ul.nav.navbar-nav
 					li.active
-						a(href='#') Home
+						a(href='/') Home
 					li
-						a(href='#about') About Me
+						a(href='/about') About Me
 					li
-						a(href='#bradley') Bradley Method®			
+						a(href='/bradley') Bradley Method®			
 
 	div.container.above.submit-area
-		h3 Right your blog here!
+		h3 Write your blog here!
 		.row
 		div.col-xs-1
 		div.col-xs-10
 			form#blog-form.form-horizontal(action="/blogSubmission" method="post")
 					.form-group
 						label Title:
-						input.form-control.title-entry(name="title" type="text" placeholder="Title of Blog Entry" rows=1) 
+						input.form-control.title-entry.input-sm(name="title" type="text" placeholder="Title of Blog Entry" rows=1) 
 					.form-group
 						label Date
-						input.form-control.date-entry(name="date" type="text" placeholder="Automate this timestamp" rows=1) 
+						input.form-control.date-entry.input-sm(name="date" type="date" placeholder="Automate this timestamp" rows=1) 
 					.form-group
 						label Blog entry:
 						//- the placeholder does not appear on page load, but may many times appear if I enter text then delete it
@@ -48,6 +48,8 @@ block content
 						//- input.btn.btn-primary(type="submit")
 						button.btn.btn-danger.submit-button(type="submit") Submit!
 		div.col-xs-1
+			//- for item in milkinblog
+				h3.title=item.title
 
 	//- could reference imgs on instagram
 	//- have video input??? like in the contest app?

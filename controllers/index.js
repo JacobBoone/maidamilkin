@@ -4,9 +4,15 @@ var indexController = {
 	index: function(req, res) {
 		res.render('index');
 	},
-	// main: function(req, res) {
-	// 	res.render('mainpage');
-	// },
+
+
+	bradley: function (req, res) {
+		res.render('bradley');
+	},
+
+	aboutme: function (req, res) {
+		res.render('aboutme');
+	},
 
 	submit: function(req, res){
 		res.render('submitpage');
@@ -21,17 +27,43 @@ var indexController = {
 		date: req.body.date,
 		blog: req.body.blog
 
-	});
+		});
 		//  mongoose knows where to save it too on the app.js page
-	newBlog.save()
-
+		newBlog.save(function(err,doc){
+			if(err){
+				console.log("ERROR!", err)
+			}
+			else{
+				res.render('submitpage')
+			}
+		})
 		// res.redirect('/mainpage')
 
 
 	},
+
+	// mysubmission: function(req,res){
+	// 	var newMyBlog = new Newblog({
+	// 	title: req.body.title,
+	// 	date: req.body.date,
+	// 	blog: req.body.blog
+
+	// 	});
+	// 	console.log(req.body)
+	// 	newMyBlog.save(function(err,doc){
+	// 		if(err){
+	// 			console.log("ERROR!", err)
+	// 		}
+	// 		else{
+	// 			res.redirect('/mainpage')
+	// 		}
+	// 	})
+	// },
+
+
 	// finds info from DB - this also ispointed to to serve as the main page the user sees.
 	viewsubmission: function(req, res){
-		Newblog.find({}, function(err, data){
+		Newblog.find({}, null,{sort:{date: -1}},function(err, data){
 		res.render('mainpage', {milkinblog: data})
 
 	})
