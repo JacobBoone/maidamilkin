@@ -15,7 +15,7 @@ var indexController = {
 	},
 
 	submit: function(req, res){
-		res.render('submitpage');
+		res.render('submitpage238902853982039a48237490573maid2874g29387f43209585473f8529380gg79458208374123f87423095824pu075');
 	},
 
 	// each new instance of the info entered
@@ -34,7 +34,7 @@ var indexController = {
 				console.log("ERROR!", err)
 			}
 			else{
-				res.render('submitpage')
+				res.render('submitpage238902853982039a48237490573maid2874g29387f43209585473f8529380gg79458208374123f87423095824pu075')
 			}
 		})
 		// res.redirect('/mainpage')

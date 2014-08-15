@@ -14,7 +14,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.viewsubmission);//points to what I want user to see.
-app.get('/submitpage', indexController.submit);
+app.get('/submitpage238902853982039a48237490573maid2874g29387f43209585473f8529380gg79458208374123f87423095824pu075', indexController.submit);
 
 app.get('/bradley', indexController.bradley);
 app.get('/about', indexController.aboutme);
