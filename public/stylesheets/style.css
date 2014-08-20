@@ -9,6 +9,21 @@ body{
 	/*background-color: beige;*/
 }
 
+.site-title, .site-tabs{
+	display: inline-block;
+}
+.site-title{
+	width: 50%;
+	float: left;
+	min-width: 410px;
+}
+.site-tabs{
+	padding-top: 9px;
+}
+.header-links{
+	color:white;
+}
+
 /*.mainbody{
 	z-index: 1;
 }*/
@@ -33,6 +48,7 @@ body{
 
 .navbar-default{
 	background-image: url(http://4.bp.blogspot.com/-cQwworLGIDc/UViNgWO7vjI/AAAAAAAAAOs/PX-vVDFaQFM/s1600/3.jpg);
+	/*opacity: 0.9;*/
 }
 
 .title-bar, .submit-area{

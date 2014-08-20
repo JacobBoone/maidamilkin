@@ -1,0 +1,39 @@
+extends layout
+
+block content
+
+	div.navbar.navbar-default.navbar-fixed-top(role='navigation')
+		.container.site-title
+				.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+	
+					//- .navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						h1 Maid a Milkin
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav.site-tabs
+					li
+						a.header-links(href='/') Home
+					li
+						a.header-links(href='/about') About Me
+					li
+						a.header-links(href='/bradley') Bradley Method®
+
+
+	//- div.container.jumbotron.title-bar			
+	div.container.above-title.title-bar
+		.row
+		div.col-xs-1
+		h1.blog-header.col-xs-7 Maid a Milkin
+		div.col-xs-4
+			//- img(src="./public/stylesheets/images/maidlogo2.png")
+			//- img(src="/public/stylesheets/images/maidlogo1.jpg")
+		.row
+		p.col-xs-1
+		p.col-xs-7 Your new source for anything Mommy.
+		p.col-xs-4

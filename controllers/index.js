@@ -5,6 +5,9 @@ var indexController = {
 		res.render('index');
 	},
 
+	frontpage: function(req, res) {
+		res.render('frontpage');
+	},
 
 	bradley: function (req, res) {
 		res.render('bradley');
@@ -65,7 +68,7 @@ var indexController = {
 	// this posts the blog entries in chronological order descending by date. however, not by time, 2+ entries on the same day wont always be in real chronological order
 	viewsubmission: function(req, res){
 		Newblog.find({}, null,{sort:{date: -1}},function(err, data){
-		res.render('mainpage', {milkinblog: data})
+		res.render('blogpage', {milkinblog: data})
 
 	})
 	}
